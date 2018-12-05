@@ -1,2 +1,8 @@
 # NSSwebsite
-NSS IIT Patna Website
+
+This website is the official website of NSS IIT Patna.
+
+Team:-
+Adarsh Chaudary (Coordinator) 
+Vatsal Singhal (Coordinator)
+(others add your name when you contribute)
