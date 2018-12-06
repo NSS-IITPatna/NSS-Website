@@ -8,5 +8,10 @@ Adarsh Chaudary (Coordinator)
 
 Vatsal Singhal (Coordinator)
 
+Amartya Mondal (Contributor)
+
+Aryan Kothari (Contributor)
+
+Kishan Kumar Singh (Contributor)
+
 (others add your name when you contribute)
-Kishan Kumar Singh(Volunteering Front End)
