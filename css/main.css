@@ -643,7 +643,7 @@ input.search-form:hover {
     padding: 40px 30px;
     background: #fff;
     border-radius: 4px;
-    margin: 0 0 40px;
+    margin: 0 0 150px;
     -webkit-transition: .4s;
     transition: .4s;
     color: #707070;
@@ -667,7 +667,7 @@ input.search-form:hover {
 }
 
 .services-wrap .pull-left {
-    margin-right: 40px;
+   
     margin-top: 15px;
 }
 
