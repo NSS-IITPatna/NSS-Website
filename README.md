@@ -14,4 +14,6 @@ Aryan Kothari (Contributor)
 
 Kishan Kumar Singh (Contributor)
 
+Vaibhav Goel (contributor)
+
 (others add your name when you contribute)
