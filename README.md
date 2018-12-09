@@ -8,4 +8,6 @@ Adarsh Chaudary (Coordinator)
 
 Vatsal Singhal (Coordinator)
 
+Utsav Majhi (Coordinator)
+
 (others add your name when you contribute)
