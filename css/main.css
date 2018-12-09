@@ -274,6 +274,12 @@ input.search-form:hover {
     padding: 15px 0;
     padding-bottom: 0;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
 
 .navbar-nav {
     margin-top: 12px;
@@ -308,6 +314,7 @@ input.search-form:hover {
     line-height: 50px;
     color: #fff;
 }
+
 
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:hover,
@@ -643,7 +650,7 @@ input.search-form:hover {
     padding: 40px 30px;
     background: #fff;
     border-radius: 4px;
-    margin: 0 0 40px;
+    margin: 0 0 150px;
     -webkit-transition: .4s;
     transition: .4s;
     color: #707070;
@@ -667,7 +674,7 @@ input.search-form:hover {
 }
 
 .services-wrap .pull-left {
-    margin-right: 40px;
+
     margin-top: 15px;
 }
 

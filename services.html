@@ -52,7 +52,8 @@
                         <li><a href="portfolio.html">Gallery</a></li>
                         <li class="active"><a href="services.html">Events</a></li>
                         <li><a href="about-us.html">Team</a></li>
-                        <li><a href="contact-us.html">Contact</a></li>
+
+                        <li><a href="faq.html">FAQ's</a></li>
                         <li><a href="think-thank.html">Think Thank</a></li>
                     </ul>
                 </div>
@@ -67,12 +68,38 @@
         <h1>Events</h1>
     </div>
 
-    <footer id="footer" class="midnight-blue">
-        <div class="container">
-            &copy; COPYRIGHT || NSS IIT P || WEB DEV TEAM
-        </div>
-    </footer>
+    <section id="partner">
+       <div class="container">
+           <div class="center fadeInDown">
+               <h2>Contact Us </h2>
+               <p>
+               <i class="fa fa-envelope" aria-hidden="true" style="font-size: 28px; color: #000; margin-right: 8px;"></i>nss@iitp.ac.in<br><br>
+               <i class="fa fa-phone" aria-hidden="true" style="font-size: 32px; color: #000; margin-right: 8px;"></i>+91-8827275145<br><br>
+               <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 32px; color: #000; margin-right: 8px;"></i> IIT Patna Campus, Patna, 801110</p>
+           </div>
+           &copy; COPYRIGHT || NSS IIT P || WEB DEV TEAM
+       </div>
+       <!--/.container-->
+   </section>
+   <!--/#partner-->
     <!--/#footer-->
+
+    <!-- Defining function for fixed header -->
+        <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
