@@ -52,6 +52,7 @@
                         <li><a href="portfolio.html">Gallery</a></li>
                         <li class="active"><a href="services.html">Events</a></li>
                         <li><a href="about-us.html">Team</a></li>
+
                         <li><a href="faq.html">FAQ's</a></li>
                         <li><a href="think-thank.html">Think Thank</a></li>
                     </ul>
@@ -82,6 +83,23 @@
    </section>
    <!--/#partner-->
     <!--/#footer-->
+
+    <!-- Defining function for fixed header -->
+        <script>
+        window.onscroll = function() {myFunction()};
+
+        var header = document.getElementById("header");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
+
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -52,6 +52,7 @@
                         <li><a href="#services">Cells</a></li>
                         <li><a href="#here">Events</a></li>
                         <li><a href="about-us.html">Team</a></li>
+
                         <li><a href="faq.html">FAQ's</a></li>
                         <li><a href="think-thank.html">Think Thank</a></li>
                     </ul>
@@ -481,6 +482,23 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
+
+<!-- Defining function for fixed header -->
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+
 </body>
 
 </html>
