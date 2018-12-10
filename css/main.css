@@ -274,6 +274,12 @@ input.search-form:hover {
     padding: 15px 0;
     padding-bottom: 0;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
 
 .navbar-nav {
     margin-top: 12px;
@@ -308,6 +314,7 @@ input.search-form:hover {
     line-height: 50px;
     color: #fff;
 }
+
 
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:hover,
@@ -643,7 +650,7 @@ input.search-form:hover {
     padding: 40px 30px;
     background: #fff;
     border-radius: 4px;
-    margin: 0 0 40px;
+    margin: 0 0 150px;
     -webkit-transition: .4s;
     transition: .4s;
     color: #707070;
@@ -667,7 +674,7 @@ input.search-form:hover {
 }
 
 .services-wrap .pull-left {
-    margin-right: 40px;
+
     margin-top: 15px;
 }
 
@@ -1144,7 +1151,7 @@ a.accordion-toggle i {
 }
 .single-team .inner{
     background: #fff;
-    text-align: center;    
+    text-align: center;
     color: #989898;
     font-size: 16px;
     -webkit-transition: .4s;
@@ -1799,7 +1806,7 @@ ul.faq li>div h3 {
 
 .blog .blog-item .blog-content h2{
     line-height: 33px;
-} 
+}
 .blog .blog-item .blog-content h3 {
     color: #989898;
     font-weight: 300;
@@ -1877,7 +1884,7 @@ ul.pagination>li:hover>a {
     color: #fff;
 }
 
-ul.pagination>li:first-child > a, 
+ul.pagination>li:first-child > a,
 ul.pagination>li:last-child > a{
     background-color: transparent;
     color: #989898;
@@ -1885,7 +1892,7 @@ ul.pagination>li:last-child > a{
     transform: translateX(-200px)
 }
 
-ul.pagination>li:first-child > a:hover, 
+ul.pagination>li:first-child > a:hover,
 ul.pagination>li:last-child > a:hover{
     background-color: transparent;
     color: #EC5538;
@@ -1898,7 +1905,7 @@ ul.pagination>li:first-child > a{
     -webkit-transform: translateX(-200px);
     transform: translateX(-200px)
 }
- 
+
 ul.pagination>li:last-child > a{
     background-color: transparent;
     color: #989898;
