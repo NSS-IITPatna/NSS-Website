@@ -8,6 +8,8 @@ Adarsh Chaudary (Coordinator)
 
 Vatsal Singhal (Coordinator)
 
+Utsav Majhi (Contributor)
+
 Amartya Mondal (Contributor)
 
 Aryan Kothari (Contributor)
