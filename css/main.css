@@ -168,6 +168,7 @@ body>section {
 
 .page-title{
     padding: 60px 0;
+    justify-content: center;
 }
 
 .page-title h1{
@@ -270,9 +271,16 @@ input.search-form:hover {
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
-    background: #151515;
+    background-image: url("../images/back.jpg");
+    background-position: left;
     padding: 15px 0;
     padding-bottom: 0;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
 }
 
 .navbar-nav {
@@ -308,6 +316,7 @@ input.search-form:hover {
     line-height: 50px;
     color: #fff;
 }
+
 
 .navbar-inverse .navbar-nav>.active>a,
 .navbar-inverse .navbar-nav>.active>a:hover,
@@ -643,7 +652,7 @@ input.search-form:hover {
     padding: 40px 30px;
     background: #fff;
     border-radius: 4px;
-    margin: 0 0 40px;
+    margin: 0 0 150px;
     -webkit-transition: .4s;
     transition: .4s;
     color: #707070;
@@ -667,7 +676,7 @@ input.search-form:hover {
 }
 
 .services-wrap .pull-left {
-    margin-right: 40px;
+
     margin-top: 15px;
 }
 
@@ -1144,7 +1153,7 @@ a.accordion-toggle i {
 }
 .single-team .inner{
     background: #fff;
-    text-align: center;    
+    text-align: center;
     color: #989898;
     font-size: 16px;
     -webkit-transition: .4s;
@@ -1799,7 +1808,7 @@ ul.faq li>div h3 {
 
 .blog .blog-item .blog-content h2{
     line-height: 33px;
-} 
+}
 .blog .blog-item .blog-content h3 {
     color: #989898;
     font-weight: 300;
@@ -1877,7 +1886,7 @@ ul.pagination>li:hover>a {
     color: #fff;
 }
 
-ul.pagination>li:first-child > a, 
+ul.pagination>li:first-child > a,
 ul.pagination>li:last-child > a{
     background-color: transparent;
     color: #989898;
@@ -1885,7 +1894,7 @@ ul.pagination>li:last-child > a{
     transform: translateX(-200px)
 }
 
-ul.pagination>li:first-child > a:hover, 
+ul.pagination>li:first-child > a:hover,
 ul.pagination>li:last-child > a:hover{
     background-color: transparent;
     color: #EC5538;
@@ -1898,7 +1907,7 @@ ul.pagination>li:first-child > a{
     -webkit-transform: translateX(-200px);
     transform: translateX(-200px)
 }
- 
+
 ul.pagination>li:last-child > a{
     background-color: transparent;
     color: #989898;
@@ -2340,4 +2349,96 @@ shortcodes page css
 #footer ul>li {
     display: inline-block;
     margin-left: 15px;
+}
+body {
+  color: #333;
+  font-family: "Raleway", Arial, Helvetica, serif;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  background: url(http://josetxu.com/img/fondo_blanco.png) repeat 0 0 #fff;
+}
+
+h1 {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  margin: 0 0 5% 0;
+  padding: 0.5em;
+  margin: 0 0 5% 0;
+}
+
+.flip-card {
+  float:left;
+  padding: 22px;
+  background-color:#bfbfbf;
+  width: 370px;
+  height: 285px;
+  margin: 4px;
+  border-radius:30px;
+  box-sizing: border-box;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility:hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  padding-top: 30%;
+  background-image:url("../images/greyb.jpg");
+  color: white;
+  transform: rotateY(180deg);
+}
+.row{
+  display: block;
+}
+.team-content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 0;
+}
+.desg{
+  text-align: center;
+  color: #171BAB;
+  font-size: 16px;
+  font-style: italic;
+}
+.team-social a{
+color: #989898;
+padding: 4px;
+padding-top: 10px;
+margin: 0 10px;
+}
+.team-social a:hover{
+    color: #EC5538;
+    -webkit-transition: color 300ms, background-color 300ms;
+    transition: color 300ms, background-color 300ms;
 }
