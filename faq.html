@@ -32,6 +32,38 @@
     <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
   	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
 
+    <style>
+
+    li.dropdown {
+      display: inline-block;
+    }
+    .dropdown:hover .dropbtn {
+  background-color: red;}
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1}
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+
 
 </head>
 <!--/head-->
@@ -55,6 +87,17 @@
                     <ul class="nav navbar-nav">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="portfolio.html">Gallery</a></li>
+                        <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn">Cells</a>
+                            <div class="dropdown-content">
+                              <a href="Cells/prayatna.html">Prayatna</a>
+                              <a href="Cells/technical_skills.html">Technical Skills</a>
+                              <a href="Cells/teaching.html">Teaching</a>
+                              <a href="Cells/rural_development.html">Rural Development</a>
+                              <a href="Cells/environment.html">Environemtal</a>
+                              <a href="Cells/awareness.html">Chetna</a>
+                            </div>
+                          </li>
                         <li><a href="services.html">Events</a></li>
                         <li><a href="about-us.html">Team</a></li>
                         <li><a href="blood_request.html">Request Blood</a></li>
