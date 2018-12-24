@@ -26,39 +26,39 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="icon" type="image/png" href="images/nss.png"/>
+      <link rel="icon" type="image/png" href="images/nss.png"/>
+      <style>
 
-    <style>
+		li.dropdown {
+		  display: inline-block;
+		}
+		.dropdown:hover .dropbtn {
+	  background-color: red;}
+	
+		.dropdown-content {
+		  display: none;
+		  position: absolute;
+		  background-color: #f9f9f9;
+		  min-width: 160px;
+		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		  z-index: 1000;
+		}
+	
+		.dropdown-content a {
+		  color: black;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		  text-align: left;
+		}
+	
+		.dropdown-content a:hover {background-color: #f1f1f1}
+	
+		.dropdown:hover .dropdown-content {
+		  display: block;
+		}
+		</style>
 
-    li.dropdown {
-      display: inline-block;
-    }
-    .dropdown:hover .dropbtn {
-  background-color: red;}
-
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1000;
-    }
-
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-
-    .dropdown-content a:hover {background-color: #f1f1f1}
-
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    </style>
 </head>
 <!--/head-->
 
@@ -84,16 +84,16 @@
                         <li ><a href="index.html">Home</a></li>
                         <li><a href="portfolio.html">Gallery</a></li>
                         <li class="dropdown">
-                          <a href="javascript:void(0)" class="dropbtn">Cells</a>
-                            <div class="dropdown-content">
-                              <a href="Cells/prayatna.html">Prayatna</a>
-                              <a href="Cells/technical_skills.html">Technical Skills</a>
-                              <a href="Cells/teaching.html">Teaching</a>
-                              <a href="Cells/rural_development.html">Rural Development</a>
-                              <a href="Cells/environment.html">Environemtal</a>
-                              <a href="Cells/awareness.html">Chetna</a>
-                            </div>
-                          </li>
+                            <a href="javascript:void(0)" class="dropbtn">Cells</a>
+                              <div class="dropdown-content">
+                                <a href="Cells/prayatna.html">Prayatna</a>
+                                <a href="Cells/technical_skills.html">Technical Skills</a>
+                                <a href="Cells/teaching.html">Teaching</a>
+                                <a href="Cells/rural_development.html">Rural Development</a>
+                                <a href="Cells/environment.html">Environemtal</a>
+                                <a href="Cells/awareness.html">Chetna</a>
+                              </div>
+                            </li>
                         <li class="active"><a href="services.html">Events</a></li>
                         <li><a href="about-us.html">Team</a></li>
                         <li><a href="blood_request.html">Request Blood</a></li>
@@ -108,7 +108,7 @@
     </header><!--/header-->
 
 
-    <div class="page-title" style="background-image: url(images/page-title.png); background-repeat: no-repeat;  background-size: 100% 100%;">
+    <div class="page-title" style="background-image: url(images/page-title.png); width: 100%">
         <h1>Events</h1>
     </div>
 
@@ -120,6 +120,8 @@
                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 28px; color: #000; margin-right: 8px;"></i>nss@iitp.ac.in<br><br>
                <i class="fa fa-phone" aria-hidden="true" style="font-size: 32px; color: #000; margin-right: 8px;"></i>+91-8827275145<br><br>
                <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 32px; color: #000; margin-right: 8px;"></i> IIT Patna Campus, Patna, 801110</p>
+			      <p><a target="_blank" title="follow us on facebook" href="https://www.facebook.com/nssiitp/?ref=br_rs"><img alt="follow us on facebook" src="images/facebook.png" border=0></a> &nbsp &nbsp &nbsp <a target="_blank" title="follow us on Twitter" href="https://www.twitter.com/nss_iitp"><img alt="follow us on twitter" src="images/twiiter.png" border=0></a>
+			   </p>
            </div>
            &copy; COPYRIGHT || NSS IIT Patna || WEB DEV TEAM
        </div>
