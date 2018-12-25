@@ -1012,7 +1012,7 @@ a.accordion-toggle i {
 }
 
 #partner {
-    background-image: url(../images/partner-bg.png);
+    background-color: tomato;
     background-size: cover;
     background-position: center center;
 }
