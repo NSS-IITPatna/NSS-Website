@@ -275,8 +275,8 @@ h1, h2, h3, h4, h5, h6, figure {
   *display: inline;
 }
 .fh5co-testimonial .testimony-slide figure img {
-  width: 90px;
-  height: 90px;
+  width: 120px;
+  height: 120px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
