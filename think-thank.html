@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
     <title>Think Thank</title>
 
     <!-- core CSS -->
@@ -67,55 +68,60 @@
 
 <body>
 
+  <header id="header">
+      <nav class="navbar navbar-inverse" role="banner">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/nssweb.png" alt="logo" style="width: 150px; height: auto;"></a>
+              </div>
 
-    <header id="header">
+              <div class="collapse navbar-collapse navbar-right">
+                  <ul class="nav navbar-nav">
+                      <li><a href="index.html"><b>Home</b></a></li>
 
-        <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/nssweb.png" alt="logo" style="width: 150px; height: auto;"></a>
-                </div>
-
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li ><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Gallery</a></li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">Cells</a>
-                              <div class="dropdown-content">
-                                <a href="Cells/prayatna.html">Prayatna</a>
-                                <a href="Cells/technical_skills.html">Technical Skills</a>
-                                <a href="Cells/teaching.html">Teaching</a>
-                                <a href="Cells/rural_development.html">Rural Development</a>
-                                <a href="Cells/environment.html">Environemtal</a>
-                                <a href="Cells/awareness.html">Chetna</a>
+          <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn"><b>Cells</b></a>
+                            <div class="dropdown-content">
+                              <a href="Cells/awareness.html">Chetna</a>
+                              <a href="Cells/environment.html">Environmental</a>
+                              <a href="Cells/technical_skills.html">Technical Skills</a>
+                              <a href="Cells/teaching.html">Teaching</a>
+                              <a href="Cells/rural_development.html">Rural Development</a>
                               </div>
-                            </li>
-                        
-                        <li><a href="about-us.html">Team</a></li>
-                        <li><a href="blood_request.html">Request Blood</a></li>
-                        <li><a href="faq.html">FAQ's</a></li>
-                        <li class="active"><a href="think-thank.html">Think Thank</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--/.container-->
-        </nav>
+                          </li>
+                          <li> <a href="Cells/prayatna.html"><b>Prayatna</b></a></li>
+                      <li><a href="portfolio.html"><b>Gallery</b></a></li>
 
-    </header><!--/header-->
+                      <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn"><b>About Us</b></a>
+                            <div class="dropdown-content">
+                      <a href="about-us.html">Our Core Team</a>
+                      <a href="faq.html">FAQ's</a>
+                    </div>
+                  </li>
+                      <li><a href="blood_request.html"><b>Request Blood</b></a></li>
+                      <li class="active"><a href="think-thank.html"><b>Think Thank</b></a></li>
+                  </ul>
+              </div>
+          </div>
+          <!--/.container-->
+      </nav>
+      <!--/nav-->
+  </header>
+  <!--/header-->
 
 
     <!--Starting the creation of form-->
     <div class="container"  style=" padding: 30px;background-image: url(images/unity.jpg);background-repeat: no-repeat;  background-size: 100% 100%;">
-  		<div class="col-md-4" style="width:450px" ></div>
-	  	<div class="col-md-4" style="background:#fff;box-shadow: 0 1px 1px #000;border-radius:5px;width:450px">
-	  		<div class="row" style="width:450px;padding:10px;box-shadow:0 1px 1px #999"><br /><font style="font-size:30px;font-family:Lato;letter-spacing:10px; color: #009688; "><center><i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"></i>THINK-THANK</center></font></div>
+  		<div class="col-md-4" style="width:300px" ></div>
+	  	<div class="col-md-4" style="background:#fff;box-shadow: 0 1px 1px #000;border-radius:5px;width:500px">
+	  		<div class="row" style="width:500px;padding:10px;box-shadow:0 1px 1px #999"><br /><font style="font-size:30px;font-family:Lato;letter-spacing:10px; color: #009688; "><center><i class="fa fa-lightbulb-o fa-4x" aria-hidden="true"></i>THINK-THANK</center></font></div>
                          <form action="" name="loginform" method="post" accept-charset="utf-8">
 		  		<div class="form-horizontal" style="padding:5px;padding-left:30px;padding-right:30px;">
 	  		<br><br>
@@ -170,7 +176,7 @@
            <p><a target="_blank" title="follow us on facebook" href="https://www.facebook.com/nssiitp/?ref=br_rs"><img height=60px; width=60px; alt="follow us on facebook" src="images/facebook.png" border=0></a> &nbsp &nbsp &nbsp <a target="_blank" title="follow us on Twitter" href="https://www.twitter.com/nss_iitp"><img height=60px; weidth=60px; alt="follow us on twitter" src="images/twiiter.png" border=0></a>&nbsp &nbsp &nbsp <a target="_blank" title="follow us on Instagram" href="https://www.instagram.com/nss_iit_patna"><img height=60px; weidth=60px; alt="follow us on instagram" src="images/instagram.png" border=0></a>&nbsp &nbsp &nbsp <a target="_blank" title="follow us on Linkedin" href="https://www.linkedin.com/company/nssiitp/"><img height=60px; weidth=60px; alt="follow us on linkedin" src="images/linkedin.png" border=0></a>
        </p>
        </div>
-       &copy; COPYRIGHT || NSS IIT P || WEB DEV TEAM
+       &copy; COPYRIGHT || NSS IIT Patna || WEB DEV TEAM
    </div>
    <!--/.container-->
 </section>

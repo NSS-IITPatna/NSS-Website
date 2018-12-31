@@ -65,48 +65,55 @@
 
 <body class="homepage">
 
-    <header id="header">
+  <header id="header">
+      <nav class="navbar navbar-inverse" role="banner">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/nssweb.png" alt="logo" style="width: 150px; height: auto;"></a>
+              </div>
 
-        <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/nssweb.png" alt="logo" style="width: 150px; height: auto;"></a>
-                </div>
+              <div class="collapse navbar-collapse navbar-right">
+                  <ul class="nav navbar-nav">
+                      <li class="active"><a href="index.html" ><b>Home</b></a></li>
 
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Gallery</a></li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">Cells</a>
-                              <div class="dropdown-content">
-                                <a href="Cells/prayatna.html">Prayatna</a>
-                                <a href="Cells/technical_skills.html">Technical Skills</a>
-                                <a href="Cells/teaching.html">Teaching</a>
-                                <a href="Cells/rural_development.html">Rural Development</a>
-                                <a href="Cells/environment.html">Environemtal</a>
-                                <a href="Cells/awareness.html">Chetna</a>
+          <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn"><b>Cells</b></a>
+                            <div class="dropdown-content">
+                              <a href="Cells/awareness.html">Chetna</a>
+                              <a href="Cells/environment.html">Environmental</a>
+                              <a href="Cells/technical_skills.html">Technical Skills</a>
+                              <a href="Cells/teaching.html">Teaching</a>
+                              <a href="Cells/rural_development.html">Rural Development</a>
                               </div>
-                            </li>
-                        <li><a href="#here">Events</a></li>
-                        <li><a href="about-us.html">Team</a></li>
-                        <li><a href="blood_request.html">Request Blood</a></li>
-                        <li><a href="faq.html">FAQ's</a></li>
-                        <li><a href="think-thank.html">Think Thank</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--/.container-->
-        </nav>
-        <!--/nav-->
-    </header>
-    <!--/header-->
+                          </li>
+                      <li> <a href="Cells/prayatna.html"><b>Prayatna</b></a></li>
+                      <li><a href="portfolio.html"><b>Gallery</b></a></li>
+
+                    <!--  <li><a href="#here"><b>Events</b></a></li>-->
+                      <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn active"><b>About Us</b></a>
+                            <div class="dropdown-content">
+                      <a href="about-us.html">Our Core Team</a>
+                      <a href="faq.html">FAQ's</a>
+                    </div>
+                  </li>
+                      <li><a href="blood_request.html"><b>Request Blood</b></a></li>
+                      <li><a href="think-thank.html"><b>Think Thank</b></a></li>
+                  </ul>
+              </div>
+          </div>
+          <!--/.container-->
+      </nav>
+      <!--/nav-->
+  </header>
+  <!--/header-->
+
 
     <section id="main-slider" class="no-margin">
         <div class="carousel slide" data-ride="carousel" >
@@ -218,7 +225,7 @@
                     </div>
                     <br>
 
-            <div class="center fadeInDown" style="border:inset;margin:10px;padding:20px;">
+            <div class="center fadeInDown" style="border:inset;margin-top:20px;padding-top:20px;margin-left:10px;margin-right:10px;">
                 <h2>What we do..?</h2>
                 <p class="lead">The NSS Society of IIT Patna functions in 6 various parts with its centre of activity being Amhara village. <br> It comprises of:
 <hr>
@@ -233,7 +240,8 @@
                     <span style="color:#f31331">Paint,MS-Office,English</span> to the students of Amhara Village
                    at middle School <span style="color:#e47814">Amhara</span>.We make awareness among our college about various epidemic disease by continous
                    publishing Posters and along with that at time of any Disaster we use to collect Funds for help.In the nearby Villages we strive to open new
-                   ways of earning by the technical knowledge of the volunteers and Work force of the People.
+                   ways of earning by the technical knowledge of the volunteers and Work force of the People.<br>
+                   <b>Prayatna</b> is functioning on a large domain in many Nearby Village and established before any other Cell of NSS.
                     </div>
             <br><br>
             <div class="center fadeInDown" style="border:inset;margin:10px;padding:20px;">
@@ -256,8 +264,9 @@
                       <br>
                       <br>
                       <br>
-                <h2>RECENTS</h2>
+                <h2>RECENT EVENTS</h2>
                     </div>
+                    <a href="Cells/rural_development.html">
                         <div class="col-md-6 col-sm-6 fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <h2>Cloth Collection and Donation</h2>
@@ -267,7 +276,10 @@
 
                         </div>
                     </div>
+                      </a>
+                    
                     <!--/.col-md-3-->
+                    <a href="Cells/awareness.html">
                     <div class="col-md-6 col-sm-6 fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="feature-wrap">
                             <h2>Kerala Flood Relief</h2>
@@ -275,6 +287,7 @@
                                 A handsome amount of funds were collected from the Boy's hostel, the Girl's hostel and the Faculty quarter of IIT Patna.</p>
                         </div>
                     </div>
+                  </a>
                     <!--/.col-md-3-->
                 </div>
                 <!--/.services-->
