@@ -273,7 +273,7 @@ input.search-form:hover {
     margin-bottom: 0;
     background-image: url("../images/back.jpg");
     background-position: left;
-    padding: 15px 0;
+    padding: 12px 0;
     padding-bottom: 0;
 }
 .sticky {
@@ -288,12 +288,12 @@ input.search-form:hover {
 }
 
 .navbar-nav>li {
-    margin-left: 20px;
-    padding-bottom: 28px;
+    margin-left: 15px;
+    padding-bottom: 25px;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-    padding: 5px 12px;
+    padding: 4px 10px;
     margin: 0;
     border-radius: 3px;
     color: #fff;
