@@ -18,5 +18,7 @@ Kishan Kumar Singh (Contributor)
 
 Vaibhav Goel (Contributor)
 
+Pranav Bajaj (Contributor)
+
 (others add your name when you contribute)
 
