@@ -12,7 +12,7 @@
 	<meta name="description" content="Webpage of the Technical Skills cell." />
 	<meta name="keywords" content="Technical Skills, NSS IIT Patna cells." />
 	<meta name="author" content="FreeHTML5.co" />
-
+<link rel="icon" type="image/png" href="../images/technical.jpg"/>
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -51,79 +51,84 @@
 	<![endif]-->
 	<style>
 
-	li.dropdown {
-		display: inline-block;
-	}
-	.dropdown:hover .dropbtn {
-background-color: red;}
+	      li.dropdown {
+	        display: inline-block;
+	      }
+	      .dropdown:hover .dropbtn {
+	    background-color: red;}
 
-	.dropdown-content {
-		display: none;
-		position: absolute;
-		background-color: #f9f9f9;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		z-index: 1000;
-	}
+	      .dropdown-content {
+	        display: none;
+	        position: absolute;
+	        background-color:#f1f1f1;
+	        min-width: 160px;
+	        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	        z-index: 1000;
+	      }
 
-	.dropdown-content a {
-		color: black;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-		text-align: left;
-	}
+	      .dropdown-content a {
+	        color: black;
+	        padding: 12px 16px;
+	        text-decoration: none;
+	        display: block;
+	        text-align: left;
+	      }
 
-	.dropdown-content a:hover {background-color: #f1f1f1}
+	      .dropdown-content a:hover {background-color: red;}
 
-	.dropdown:hover .dropdown-content {
-		display: block;
-	}
-	</style>
-
+	      .dropdown:hover .dropdown-content {
+	        display: block;
+	      }
+	      </style>
 	</head>
 	<body>
+		<header id="header">
+		<nav class="navbar navbar-inverse" role="banner">
+				<div class="container">
+						<div class="navbar-header">
+								<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+										<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="index.html"><img src="../images/nssweb.png" alt="logo" style="width: 150px; height: auto;"></a>
+						</div>
 
-		<header id="header" >
-        <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="../images/nssweb.png" alt="logo" style="width: 150px; height: auto;"></a>
-                </div>
+						<div class="collapse navbar-collapse navbar-right">
+								<ul class="nav navbar-nav">
+										<li><a href="../index.html"><b>Home</b></a></li>
 
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../portfolio.html">Gallery</a></li>
-												<li class="dropdown">
-													<a href="javascript:void(0)" class="dropbtn">Cells</a>
-														<div class="dropdown-content">
-															<a href="prayatna.html">Prayatna</a>
-															<a href="technical_skills.html">Technical Skills</a>
-															<a href="teaching.html">Teaching</a>
-															<a href="rural_development.html">Rural Development</a>
-															<a href="environment.html">Environemtal</a>
-															<a href="awareness.html">Chetna</a>
+				<li class="dropdown active">
+												<a href="javascript:void(0)" class="dropbtn"><b>Cells</b></a>
+													<div class="dropdown-content">
+														<a href="awareness.html">Chetna</a>
+														<a href="environment.html">Environmental</a>
+														<a href="technical_skills.html">Technical Skills</a>
+														<a href="teaching.html">Teaching</a>
+														<a href="rural_development.html">Rural Development</a>
 														</div>
-													</li>
-                        <li><a href="../services.html">Events</a></li>
-                        <li><a href="../about-us.html">Team</a></li>
-                        <li ><a href="../blood_request.html">Request Blood</a></li>
-                        <li ><a href="../faq.html">FAQ's</a></li>
-                        <li><a href="../think-thank.html">Think Thank</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--/.container-->
-        </nav>
-        <!--/nav-->
-    </header>
+												</li>
+										<li> <a href="prayatna.html"><b>Prayatna</b></a></li>
+										<li><a href="../portfolio.html"><b>Gallery</b></a></li>
+										<li class="dropdown">
+												<a href="javascript:void(0)" class="dropbtn"><b>About Us</b></a>
+													<div class="dropdown-content">
+										<a href="../about-us.html">Our Core Team</a>
+										<a href="../faq.html">FAQ's</a>
+									</div>
+								</li>
+										<li><a href="../blood_request.html"><b>Request Blood</b></a></li>
+										<li><a href="../think-thank.html"><b>Think Thank</b></a></li>
+										  <li><a href="https://docs.google.com/spreadsheets/d/1s-aJrNF8dCllijAUiij6vQrv8w8WoxvQtLE0mcLhVi8/edit#gid=0" target="_blank"><b>Check Hours</b></a></li>
+								</ul>
+						</div>
+				</div>
+				<!--/.container-->
+		</nav>
+		<!--/nav-->
+</header>
+<!--/header-->
 
 	<header id="fh5co-header" style="background-image: url(../images/tech_skill.jpeg)">
 		<div class="overlay"></div>
@@ -216,7 +221,7 @@ background-color: red;}
 					<div class="fh5co-copy">
 						<div class="fh5co-copy-inner">
 							<h2>Spoken English</h2>
-							<p>The Spoken English divison of NSS Technical Skill provides free spoken english training to the village tem. Excelling them in the field of eenglish grammar, pronounciation etc. They teach all the stuffs that would reduce the communciation gap among the students and the world.</p>
+							<p>The Spoken English divison of NSS Technical Skill provides free Spoken English training to the village tem. Excelling them in the field of english grammar, pronounciation etc. They teach all the stuffs that would reduce the communciation gap among the students and the world.</p>
 						</div>
 					</div>
 				</div>
@@ -310,7 +315,7 @@ background-color: red;}
 							<figure>
 								<img src="images/aman.jpeg" alt="user">
 							</figure>
-							<span>Aman Kumar Thakur</span>
+							<span>Aman Thakur</span>
 						</div>
 
 						<div class="testimony-slide active text-center">
@@ -339,7 +344,7 @@ background-color: red;}
 					<div class="item" style="text-align:center">
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/atm.jpg" alt="user">
+								<img src="images/abdul.jpeg" alt="user">
 							</figure>
 							<span>Abdul Wahid</span>
 						</div>
@@ -367,7 +372,7 @@ background-color: red;}
 
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/ashu.png" alt="user">
+								<img src="images/annway.jpeg" alt="user">
 							</figure>
 							<span>Annway Bhattacharya</span>
 						</div>
@@ -377,28 +382,28 @@ background-color: red;}
 					<div class="item" style="text-align:center">
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/atm.jpg" alt="user">
+								<img src="images/pranav.jpg" alt="user">
 							</figure>
 							<span>Pranav Bajaj</span>
 						</div>
 
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/aman.jpeg" alt="user">
+								<img src="images/pranay.jpeg" alt="user">
 							</figure>
 							<span>Pranay</span>
 						</div>
 
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/person_1.jpg" alt="user">
+								<img src="images/oindrila.jpeg" alt="user">
 							</figure>
 							<span>Oindrila Bhadra</span>
 						</div>
 
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/rishu1.jpeg" alt="user">
+								<img src="images/jonish.jpeg" alt="user">
 							</figure>
 							<span>Jonish Solanki</span>
 						</div>
@@ -414,28 +419,28 @@ background-color: red;}
 					<div class="item" style="text-align:center">
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/atm.jpg" alt="user">
+								<img src="images/rahul.jpeg" alt="user">
 							</figure>
 							<span>Rahul Gupta</span>
 						</div>
 
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/aman.jpeg" alt="user">
+								<img src="images/sahil.jpeg" alt="user">
 							</figure>
 							<span>Sahil Sharma</span>
 						</div>
 
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/person_1.jpg" alt="user">
+								<img src="images/samriddhi.png" alt="user">
 							</figure>
 							<span>Samriddhi Kumari</span>
 						</div>
 
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/rishu1.jpeg" alt="user">
+								<img src="images/shresth.jpeg" alt="user">
 							</figure>
 							<span>Shresth Walia </span>
 						</div>
@@ -451,30 +456,30 @@ background-color: red;}
 					<div class="item" style="text-align:center">
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/atm.jpg" alt="user">
+								<img src="images/sravani.jpeg" alt="user">
 							</figure>
 							<span>Sravani Kristam</span>
 						</div>
 
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/aman.jpeg" alt="user">
+								<img src="images/sushma.jpeg" alt="user">
 							</figure>
 							<span>Sushma Reddy</span>
 						</div>
 
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/person_1.jpg" alt="user">
+								<img src="images/swastik.jpeg" alt="user">
 							</figure>
 							<span>Swastik Dutta</span>
 						</div>
 
 						<div class="testimony-slide active text-center">
 							<figure>
-								<img src="images/rishu1.jpeg" alt="user">
+								<img src="images/kaushik.jpeg" alt="user">
 							</figure>
-							<span>Tejaswani</span>
+							<span>V Kamal Kaushik</span>
 						</div>
 
 						<div class="testimony-slide active text-center">
@@ -543,8 +548,8 @@ background-color: red;}
 							<span class="icon">
 								<i class="icon-cog"></i>
 							</span>
-							<h3>MS OFFICE</h3>
-							<p>We have taught them about hte various features of MS Office and explained them why should we learn it. We have also conducted practical classes along with exams on this topic</p>
+							<h3>MS Word 2016</h3>
+							<p>We have taught them about hte various features of MS Word and explained them why should we learn it. We have also conducted practical classes along with exams on this topic</p>
 						</div>
 					</div>
 					<div class="col-md-3 animate-box">
@@ -570,8 +575,8 @@ background-color: red;}
 							<span class="icon">
 								<i class="icon-cog"></i>
 							</span>
-							<h3>Spoken English</h3>
-							<p>Spoken English classes are conducted regularly expertising the student to speak fluently in English.</p>
+							<h3>Notepad</h3>
+							<p>We have first introduced text editor to the students by a simple editor Notepad.They have started learning to type in computer in this application.</p>
 						</div>
 					</div>
 				</div>
@@ -586,8 +591,8 @@ background-color: red;}
                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 28px; color: #000; margin-right: 8px;"></i>nss@iitp.ac.in<br><br>
                <i class="fa fa-phone" aria-hidden="true" style="font-size: 32px; color: #000; margin-right: 8px;"></i>+91-8827275145<br><br>
                <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 32px; color: #000; margin-right: 8px;"></i> IIT Patna Campus, Patna, 801110</p><br>
-			    <p><a target="_blank" title="follow us on facebook" href="https://www.facebook.com/nssiitp/?ref=br_rs"><img alt="follow us on facebook" src="images/facebook.png" border=0></a> &nbsp &nbsp &nbsp <a target="_blank" title="follow us on Twitter" href="https://www.twitter.com/nss_iitp"><img alt="follow us on twitter" src="images/twiiter.png" border=0></a>&nbsp &nbsp &nbsp <a target="_blank" title="follow us on Instagram" href="https://www.instagram.com/nss_iit_patna"><img alt="follow us on instagram" src="images/instagram.png" border=0></a>&nbsp &nbsp &nbsp <a target="_blank" title="follow us on Linkedin" href="https://www.linkedin.com/company/nssiitp/"><img alt="follow us on linkedin" src="images/linkedin.png" border=0></a>
-			   </p>
+							 <p><a target="_blank" title="follow us on facebook" href="https://www.facebook.com/nssiitp/?ref=br_rs"><img height=60px; width=60px; alt="follow us on facebook" src="../images/facebook.png" border=0></a> &nbsp &nbsp &nbsp <a target="_blank" title="follow us on Twitter" href="https://www.twitter.com/nss_iitp"><img height=60px; weidth=60px; alt="follow us on twitter" src="../images/twiiter.png" border=0></a>&nbsp &nbsp &nbsp <a target="_blank" title="follow us on Instagram" href="https://www.instagram.com/nss_iit_patna"><img height=60px; weidth=60px; alt="follow us on instagram" src="../images/instagram.png" border=0></a>&nbsp &nbsp &nbsp <a target="_blank" title="follow us on Linkedin" href="https://www.linkedin.com/company/nssiitp/"><img height=60px; weidth=60px; alt="follow us on linkedin" src="../images/linkedin1.png" border=0></a>
+						   </p>
 
 
 

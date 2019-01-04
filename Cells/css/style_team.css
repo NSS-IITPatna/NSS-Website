@@ -771,5 +771,19 @@ h1, h2, h3, h4, h5, h6, figure {
 .js .animate-box {
   opacity: 0;
 }
+.p{
+  color:#DBF8F7;
+  font-style: italic;
+  text-align: center;
+  font-size: 25px;
+  padding-left: 18px;
+}
+.img-1{
+    border-radius: 50%;
 
+}
+.you{
+  color:#45FFF9;
+  font-style: italic;
+}
 /*# sourceMappingURL=style.css.map */

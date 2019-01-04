@@ -30,84 +30,89 @@
 
     <style>
 
-		li.dropdown {
-		  display: inline-block;
-		}
-		.dropdown:hover .dropbtn {
-	  background-color: red;}
-	
-		.dropdown-content {
-		  display: none;
-		  position: absolute;
-		  background-color: #f9f9f9;
-		  min-width: 160px;
-		  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-		  z-index: 1000;
-		}
-	
-		.dropdown-content a {
-		  color: black;
-		  padding: 12px 16px;
-		  text-decoration: none;
-		  display: block;
-		  text-align: left;
-		}
-	
-		.dropdown-content a:hover {background-color: #f1f1f1}
-	
-		.dropdown:hover .dropdown-content {
-		  display: block;
-		}
-		</style>
+        li.dropdown {
+          display: inline-block;
+        }
+        .dropdown:hover .dropbtn {
+      background-color: red;}
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color:#f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1000;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: red;}
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
 </head>
 <!--/head-->
 
 <body>
 
-    <header id="header">
+  <header id="header">
+      <nav class="navbar navbar-inverse" role="banner">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/nssweb.png" alt="logo" style="width: 150px; height: auto;"></a>
+              </div>
 
-        <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/nssweb.png" alt="logo" style="width: 150px; height: auto;"></a>
-                </div>
+              <div class="collapse navbar-collapse navbar-right">
+                  <ul class="nav navbar-nav">
+                      <li><a href="index.html"><b>Home</b></a></li>
 
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li ><a href="index.html">Home</a></li>
-                        <li class="active" ><a href="portfolio.html">Gallery</a></li>
-                        <li class="dropdown">
-                            <a href="javascript:void(0)" class="dropbtn">Cells</a>
-                              <div class="dropdown-content">
-                                <a href="Cells/prayatna.html">Prayatna</a>
-                                <a href="Cells/technical_skills.html">Technical Skills</a>
-                                <a href="Cells/teaching.html">Teaching</a>
-                                <a href="Cells/rural_development.html">Rural Development</a>
-                                <a href="Cells/environment.html">Environemtal</a>
-                                <a href="Cells/awareness.html">Chetna</a>
+          <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn"><b>Cells</b></a>
+                            <div class="dropdown-content">
+                              <a href="Cells/awareness.html">Chetna</a>
+                              <a href="Cells/environment.html">Environmental</a>
+                              <a href="Cells/technical_skills.html">Technical Skills</a>
+                              <a href="Cells/teaching.html">Teaching</a>
+                              <a href="Cells/rural_development.html">Rural Development</a>
                               </div>
-                            </li>
-                        <li><a href="services.html">Events</a></li>
-                        <li><a href="about-us.html">Team</a></li>
-                        <li><a href="blood_request.html">Request Blood</a></li>
-                        <li><a href="faq.html">FAQ's</a></li>
-                        <li><a href="think-thank.html">Think Thank</a></li>
+                          </li>
+                          <li> <a href="Cells/prayatna.html"><b>Prayatna</b></a></li>
+                      <li class="active"><a href="portfolio.html"><b>Gallery</b></a></li>
 
-                    </ul>
-                </div>
-            </div>
-            <!--/.container-->
-        </nav>
-        <!--/nav-->
+                      <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn"><b>About Us</b></a>
+                            <div class="dropdown-content">
+                      <a href="about-us.html">Our Core Team</a>
+                      <a href="faq.html">FAQ's</a>
+                    </div>
+                  </li>
+                      <li><a href="blood_request.html"><b>Request Blood</b></a></li>
+                      <li><a href="think-thank.html"><b>Think Thank</b></a></li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1s-aJrNF8dCllijAUiij6vQrv8w8WoxvQtLE0mcLhVi8/edit#gid=0" target="_blank"><b>Check Hours</b></a></li>
+                  </ul>
+              </div>
+          </div>
+          <!--/.container-->
+      </nav>
+      <!--/nav-->
+  </header>
+  <!--/header-->
 
-    </header>
-    <!--/header-->
 
     <div class="page-title" style="background-image: url(images/gallery.jpg); background-repeat: no-repeat;  background-size: 100% 100%;">
        <!---- <h1>Photo Gallery</h1>-->
@@ -638,10 +643,10 @@
                     <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
 
                     <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/gallery/alumni/img_2.jpg" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_2.JPG" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/gallery/alumni/img_2.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/IMG_2.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -650,10 +655,10 @@
                     <!--/.portfolio-item-->
                     <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/gallery/alumni/img_3.jpg" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_3.JPG" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/gallery/alumni/img_3.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/IMG_3.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -662,10 +667,10 @@
 
                     <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/gallery/alumni/img_4.jpg" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_4.JPG" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/gallery/alumni/img_4.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/IMG_4.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -674,10 +679,10 @@
 
                     <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/gallery/alumni/img_5.jpg" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_5.JPG" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/gallery/alumni/img_5.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/IMG_5.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -686,10 +691,10 @@
 
                     <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/gallery/alumni/img_6.jpg" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_6.JPG" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/gallery/alumni/img_6.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/IMG_6.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -698,10 +703,10 @@
 
                     <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/gallery/alumni/img_7.jpg" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_7.JPG" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/gallery/alumni/img_7.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/IMG_7.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -710,10 +715,10 @@
 
                     <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/gallery/alumni/img_8.jpg" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_8.JPG" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/gallery/alumni/img_8.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/IMG_8.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -721,10 +726,10 @@
                     <!--/.portfolio-item-->
                     <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/gallery/alumni/img_9.jpg" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_9.JPG" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/gallery/alumni/img_9.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/IMG_9.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -732,10 +737,10 @@
                     <!--/.portfolio-item-->
                     <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/gallery/alumni/img_10.jpg" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_10.JPG" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/gallery/alumni/img_10.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/IMG_10.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -744,10 +749,10 @@
                     <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
 
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/gallery/alumni/img_11.jpg" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_11.JPG" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/gallery/alumni/img_11.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/IMG_11.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -768,8 +773,8 @@
                <i class="fa fa-envelope" aria-hidden="true" style="font-size: 28px; color: #000; margin-right: 8px;"></i>nss@iitp.ac.in<br><br>
                <i class="fa fa-phone" aria-hidden="true" style="font-size: 32px; color: #000; margin-right: 8px;"></i>+91-8827275145<br><br>
                <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 32px; color: #000; margin-right: 8px;"></i> IIT Patna Campus, Patna, 801110</p><br>
-			     <p><a target="_blank" title="follow us on facebook" href="https://www.facebook.com/nssiitp/?ref=br_rs"><img alt="follow us on facebook" src="images/facebook.png" border=0></a> &nbsp &nbsp &nbsp <a target="_blank" title="follow us on Twitter" href="https://www.twitter.com/nss_iitp"><img alt="follow us on twitter" src="images/twiiter.png" border=0></a>&nbsp &nbsp &nbsp <a target="_blank" title="follow us on Instagram" href="https://www.instagram.com/nss_iit_patna"><img alt="follow us on instagram" src="images/instagram.png" border=0></a>&nbsp &nbsp &nbsp <a target="_blank" title="follow us on Linkedin" href="https://www.linkedin.com/company/nssiitp/"><img alt="follow us on linkedin" src="images/linkedin.png" border=0></a>
-			   </p>
+               <p><a target="_blank" title="follow us on facebook" href="https://www.facebook.com/nssiitp/?ref=br_rs"><img height=60px; width=60px; alt="follow us on facebook" src="images/facebook.png" border=0></a> &nbsp &nbsp &nbsp <a target="_blank" title="follow us on Twitter" href="https://www.twitter.com/nss_iitp"><img height=60px; weidth=60px; alt="follow us on twitter" src="images/twiiter.png" border=0></a>&nbsp &nbsp &nbsp <a target="_blank" title="follow us on Instagram" href="https://www.instagram.com/nss_iit_patna"><img height=60px; weidth=60px; alt="follow us on instagram" src="images/instagram.png" border=0></a>&nbsp &nbsp &nbsp <a target="_blank" title="follow us on Linkedin" href="https://www.linkedin.com/company/nssiitp/"><img height=60px; weidth=60px; alt="follow us on linkedin" src="images/linkedin1.png" border=0></a>
+           </p>
            </div>
            &copy; COPYRIGHT || NSS IIT Patna || WEB DEV TEAM
        </div>
