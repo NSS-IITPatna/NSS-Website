@@ -665,7 +665,8 @@ input.search-form:hover {
 }
 
 .services-wrap:hover {
-    background-color: #FAFAFA;
+    background-color: #9AF9F5;
+
 }
 
 .services-wrap h3 {
@@ -2361,4 +2362,14 @@ shortcodes page css
 #footer ul>li {
     display: inline-block;
     margin-left: 15px;
+}
+.pull-left1{
+  padding-left: 70px;
+  padding-bottom: 12px;
+
+
+}
+.img-responsive{
+  border-color: #044DD2;
+    border-radius: 50%;
 }
