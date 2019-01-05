@@ -17,6 +17,7 @@
     <link href="css/icomoon.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -26,165 +27,804 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="icon" type="image/png" href="images/nss.png"/>
+
+    <style>
+
+        li.dropdown {
+          display: inline-block;
+        }
+        .dropdown:hover .dropbtn {
+      background-color: red;}
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color:#f1f1f1;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1000;
+        }
+
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-align: left;
+        }
+
+        .dropdown-content a:hover {background-color: red;}
+
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        </style>
 </head>
 <!--/head-->
 
 <body>
 
-    <header id="header">
+  <header id="header">
+      <nav class="navbar navbar-inverse" role="banner">
+          <div class="container">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html"><img src="images/nssweb.png" alt="logo" style="width: 150px; height: auto;"></a>
+              </div>
 
-        <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-                </div>
+              <div class="collapse navbar-collapse navbar-right">
+                  <ul class="nav navbar-nav">
+                      <li><a href="index.html"><b>Home</b></a></li>
 
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="portfolio.html">Gallery</a></li>
-                        <li><a href="services.html">Events</a></li>
-                        <li><a href="about-us.html">Team</a></li>
-                        <li><a href="contact-us.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--/.container-->
-        </nav>
-        <!--/nav-->
+          <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn"><b>Cells</b></a>
+                            <div class="dropdown-content">
+                              <a href="Cells/awareness.html">Chetna</a>
+                              <a href="Cells/environment.html">Environmental</a>
+                              <a href="Cells/technical_skills.html">Technical Skills</a>
+                              <a href="Cells/teaching.html">Teaching</a>
+                              <a href="Cells/rural_development.html">Rural Development</a>
+                              </div>
+                          </li>
+                          <li> <a href="Cells/prayatna.html"><b>Prayatna</b></a></li>
+                      <li class="active"><a href="portfolio.html"><b>Gallery</b></a></li>
 
-    </header>
-    <!--/header-->
+                      <li class="dropdown">
+                          <a href="javascript:void(0)" class="dropbtn"><b>About Us</b></a>
+                            <div class="dropdown-content">
+                      <a href="about-us.html">Our Core Team</a>
+                      <a href="faq.html">FAQ's</a>
+                    </div>
+                  </li>
+                       <li><a href="events/events.html"><b>Events</b></a></li>
+                      <li><a href="think-thank.html"><b>Think Thank</b></a></li>
+                      <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"><b>Check Hours</b></a>
+                      <div class="dropdown-content">
+                <a href="https://docs.google.com/spreadsheets/d/1s-aJrNF8dCllijAUiij6vQrv8w8WoxvQtLE0mcLhVi8/edit#gid=0" target="_blank"><b>Autumn Semester</b></a>
+                <a href="https://docs.google.com/spreadsheets/d/1s-aJrNF8dCllijAUiij6vQrv8w8WoxvQtLE0mcLhVi8/edit#gid=0" target="_blank"><b>Spring Semester</b></a>
+              </div>
+            </li>
+                  </ul>
+              </div>
+          </div>
+          <!--/.container-->
+      </nav>
+      <!--/nav-->
+  </header>
+  <!--/header-->
 
-    <div class="page-title" style="background-image: url(images/page-title.png)">
-        <h1>Photo Gallery</h1>
+
+    <div class="page-title" style="background-image: url(images/gallery.jpg); background-repeat: no-repeat;  background-size: 100% 100%;">
+       <!---- <h1>Photo Gallery</h1>-->
     </div>
-    
+
     <section id="portfolio">
         <div class="container">
             <ul class="portfolio-filter text-center">
                 <li><a class="btn btn-default active" href="#" data-filter="*">All Photos</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".bootstrap">Section A</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".html">Section B</a></li>
-                <li><a class="btn btn-default" href="#" data-filter=".wordpress">Section C</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".bootstrap">plantation and Cloth Distribution</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".html">Alumni Meet-2018</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".wordpress">Blood Donation And Gandhi Jayanti</a></li>
+                <li><a class="btn btn-default" href="#" data-filter=".tech">Teaching and Technical Skills</a></li>
             </ul>
             <!--/#portfolio-filter-->
 
             <div class="row">
                 <div class="portfolio-items">
-                    <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3 single-work">
+
+                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/item-1.png" alt="">
+                            <img class="img-responsive" src="images/gallery/plantation/img_1.jpg" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/portfolio/item-1.png" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/plantation/img_1.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--/.portfolio-item-->
+
+
+                            <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                                <div class="recent-work-wrap">
+                                    <img class="img-responsive" src="images/gallery/plantation/img_2.jpg" alt="">
+                                    <div class="overlay">
+                                        <div class="recent-work-inner">
+                                            <a class="preview" href="images/gallery/plantation/img_2.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!--/.portfolio-item-->
+
+                                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                                        <div class="recent-work-wrap">
+                                            <img class="img-responsive" src="images/gallery/plantation/img_3.jpg" alt="">
+                                            <div class="overlay">
+                                                <div class="recent-work-inner">
+                                                    <a class="preview" href="images/gallery/plantation/img_3.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--/.portfolio-item-->
+
+                                            <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                                                <div class="recent-work-wrap">
+                                                    <img class="img-responsive" src="images/gallery/plantation/img_4.jpg" alt="">
+                                                    <div class="overlay">
+                                                        <div class="recent-work-inner">
+                                                            <a class="preview" href="images/gallery/plantation/img_4.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/.portfolio-item-->
+
+                                                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                                                        <div class="recent-work-wrap">
+                                                            <img class="img-responsive" src="images/gallery/plantation/img_5.jpg" alt="">
+                                                            <div class="overlay">
+                                                                <div class="recent-work-inner">
+                                                                    <a class="preview" href="images/gallery/plantation/img_5.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!--/.portfolio-item-->
+
+                                                            <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                                                                <div class="recent-work-wrap">
+                                                                    <img class="img-responsive" src="images/gallery/plantation/img_6.jpg" alt="">
+                                                                    <div class="overlay">
+                                                                        <div class="recent-work-inner">
+                                                                            <a class="preview" href="images/gallery/plantation/img_6.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <!--/.portfolio-item-->
+
+                                                                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                                                                        <div class="recent-work-wrap">
+                                                                            <img class="img-responsive" src="images/gallery/plantation/img_7.jpg" alt="">
+                                                                            <div class="overlay">
+                                                                                <div class="recent-work-inner">
+                                                                                    <a class="preview" href="images/gallery/plantation/img_7.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--/.portfolio-item-->
+
+                                                                            <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                                                                                <div class="recent-work-wrap">
+                                                                                    <img class="img-responsive" src="images/gallery/plantation/img_8.jpg" alt="">
+                                                                                    <div class="overlay">
+                                                                                        <div class="recent-work-inner">
+                                                                                            <a class="preview" href="images/gallery/plantation/img_8.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <!--/.portfolio-item-->
+                                                                                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                                                                                        <div class="recent-work-wrap">
+                                                                                            <img class="img-responsive" src="images/gallery/plantation/img_9.jpg" alt="">
+                                                                                            <div class="overlay">
+                                                                                                <div class="recent-work-inner">
+                                                                                                    <a class="preview" href="images/gallery/plantation/img_9.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <!--/.portfolio-item-->
+
+
+                                                                                            <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                                                                                                <div class="recent-work-wrap">
+                                                                                                    <img class="img-responsive" src="images/gallery/plantation/img_10.jpg" alt="">
+                                                                                                    <div class="overlay">
+                                                                                                        <div class="recent-work-inner">
+                                                                                                            <a class="preview" href="images/gallery/plantation/img_10.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <!--/.portfolio-item-->
+
+                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/plantation/img_11.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/plantation/img_11.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--/.portfolio-item-->
 
-                    <div class="portfolio-item joomla bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/item-2.png" alt="">
+                            <img class="img-responsive" src="images/gallery/plantation/img_12.jpg" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/portfolio/item-2.png" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/plantation/img_12.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--/.portfolio-item-->
 
-                    <div class="portfolio-item bootstrap wordpress col-xs-12 col-sm-4 col-md-3 single-work">
+                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/item-3.png" alt="">
+                            <img class="img-responsive" src="images/gallery/plantation/img_13.jpg" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/portfolio/item-3.png" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/plantation/img_13.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--/.portfolio-item-->
 
-                    <div class="portfolio-item joomla wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+
+                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/item-4.png" alt="">
+                            <img class="img-responsive" src="images/gallery/plantation/img_14.jpg" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/portfolio/item-4.png" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/plantation/img_14.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--/.portfolio-item-->
 
-                    <div class="portfolio-item joomla html bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/item-5.png" alt="">
+                            <img class="img-responsive" src="images/gallery/plantation/img_15.jpg" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/portfolio/item-5.png" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/plantation/img_15.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--/.portfolio-item-->
 
-                    <div class="portfolio-item wordpress html apps col-xs-12 col-sm-4 col-md-3 single-work">
+                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/item-1.png" alt="">
+                            <img class="img-responsive" src="images/gallery/plantation/img_16.jpg" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/portfolio/item-1.png" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/plantation/img_16.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="portfolio-item bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+                                        <div class="recent-work-wrap">
+                                            <img class="img-responsive" src="images/gallery/plantation/img_17.jpg" alt="">
+                                            <div class="overlay">
+                                                <div class="recent-work-inner">
+                                                    <a class="preview" href="images/gallery/plantation/img_17.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/blood/item1.jpg" alt="item1">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/portfolio/blood/item1.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--/.portfolio-item-->
 
-                    <div class="portfolio-item joomla html bootstrap col-xs-12 col-sm-4 col-md-3 single-work">
+
+                    <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/item-6.png" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/img_1.jpg" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/portfolio/item-6.png" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/img_1.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/blood/item2.jpg" alt="item2">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/portfolio/blood/item2.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/blood/item4.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/portfolio/blood/item4.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/gan_jay/nss1.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/gan_jay/nss1.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/gan_jay/nss2.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/gan_jay/nss2.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/gan_jay/nss3.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/gan_jay/nss3.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/gan_jay/nss4.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/gan_jay/nss4.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/gan_jay/nss5.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/gan_jay/nss5.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/gan_jay/nss6.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/gan_jay/nss6.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/gan_jay/nss7.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/gan_jay/nss7.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/blood/item5.jpg" alt="item5">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/portfolio/blood/item5.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/blood/item6.jpg" alt="item6">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/portfolio/blood/item6.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/blood/item9.jpg" alt="item9">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/portfolio/blood/item9.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/blood/item8.jpg" alt="item8">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/portfolio/blood/item8.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/blood/item10.jpg" alt="item10">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/portfolio/blood/item10.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/blood/item3.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/portfolio/blood/item3.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item wordpress apps col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/portfolio/blood/item7.jpg" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/portfolio/blood/item7.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item tech col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/tech/nss1.jpeg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/tech/nss1.jpeg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item tech col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/tech/nss2.jpeg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/tech/nss2.jpeg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item tech col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/tech/nss3.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/tech/nss3.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item tech col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/tech/nss4.jpeg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/tech/nss4.jpeg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item tech col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/tech/nss5.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/tech/nss5.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!--
+                    <div class="portfolio-item tech col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/tech/nss6.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/tech/nss6.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+
+                    <div class="portfolio-item tech col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/tech/nss7.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/tech/nss7.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item tech col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/tech/nss8.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/tech/nss8.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item tech col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/tech/nss9.jpg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/tech/nss9.jpg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item tech col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/tech/nss10.jpeg" alt="item4">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/tech/nss10.jpeg" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
+
+                    <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_2.JPG" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/alumni/IMG_2.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_3.JPG" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/alumni/IMG_3.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--/.portfolio-item-->
 
-                    <div class="portfolio-item wordpress html apps col-xs-12 col-sm-4 col-md-3 single-work">
+                    <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
                         <div class="recent-work-wrap">
-                            <img class="img-responsive" src="images/portfolio/item-2.png" alt="">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_4.JPG" alt="">
                             <div class="overlay">
                                 <div class="recent-work-inner">
-                                    <a class="preview" href="images/portfolio/item-2.png" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                    <a class="preview" href="images/gallery/alumni/IMG_4.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!--/.portfolio-item-->
-                </div>
+
+                    <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_5.JPG" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/alumni/IMG_5.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_6.JPG" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/alumni/IMG_6.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_7.JPG" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/alumni/IMG_7.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+                    <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_8.JPG" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/alumni/IMG_8.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_9.JPG" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/alumni/IMG_9.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_10.JPG" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/alumni/IMG_10.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+                    <div class="portfolio-item html col-xs-12 col-sm-4 col-md-3 single-work">
+
+                        <div class="recent-work-wrap">
+                            <img class="img-responsive" src="images/gallery/alumni/IMG_11.JPG" alt="">
+                            <div class="overlay">
+                                <div class="recent-work-inner">
+                                    <a class="preview" href="images/gallery/alumni/IMG_11.JPG" rel="prettyPhoto"><i class="fa fa-plus"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/.portfolio-item-->
+
+
             </div>
         </div>
     </section>
     <!--/#portfolio-item-->
-    
-    <footer id="footer" class="midnight-blue">
-        <div class="container">
-            &copy; COPYRIGHT || NSS IIT P || WEB DEV TEAM
-        </div>
-    </footer>
+    <section id="partner" style="padding-top:25px; padding-bottom:25px;">
+       <div class="container">
+        <div class="row">
+         <div class="center fadeInDown" style="padding-bottom:25px;">
+             <h2>Contact Us </h2>
+             <p>
+                 <div class="col-md-4 col-sm-12">
+             <i class="fa fa-envelope" aria-hidden="true" style="font-size: 28px; padding-bottom: 5px; color: #000; margin-right: 8px;"></i>nss@iitp.ac.in &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+             </div>
+
+             <div class="col-md-4 col-sm-12">
+             <i class="fa fa-phone" aria-hidden="true" style="font-size: 32px;padding-left: 10px; padding-bottom: 5px; color: #000; margin-right: 8px;"></i>+91-8827275145 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+             <i class="fa fa-map-marker" aria-hidden="true" style="font-size: 32px; padding-left: 25px; color: #000; margin-right: 8px;"></i> IIT Patna Campus, Patna, 801110</p><br>
+            </div>
+
+            <div class="row">
+                            <br>
+                            <br>
+                            <br>
+                                <a href="https://www.facebook.com/nssiitp/"> <i class="fa fa-facebook-official logo"  aria-hidden="true"></i> </a>
+                               <a href="https://twitter.com/nss_iitp"> <i class="fa fa-twitter logo" aria-hidden="true"></i></a>
+                               <a href="https://www.instagram.com/nss_iit_patna/"> <i class="fa fa-instagram logo" aria-hidden="true"></i></a>
+                                <a href="https://www.linkedin.com/company/nssiitp/"> <i class="fa fa-linkedin-square logo" aria-hidden="true"></i></a>
+                                <br>
+                                <br>
+
+                     </div>
+         </div>
+
+           &copy; COPYRIGHT || NSS IIT Patna || WEB DEV TEAM
+
+       </div>
+       <!--/.container-->
+   </section>
+   <!--/#partner-->
     <!--/#footer-->
+
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
