@@ -180,6 +180,7 @@ Main components
   }
 }
 
+
 .cd-faq-items {
   position: fixed;
   height: 100%;
@@ -390,6 +391,8 @@ Main components
     transform: rotate(45deg);
     right: 32px;
   }
+
+
   .cd-faq-trigger::after {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
