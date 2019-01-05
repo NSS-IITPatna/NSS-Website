@@ -1017,6 +1017,18 @@ a.accordion-toggle i {
     background-position: center center;
 }
 
+#partner img {
+    height: 60px;
+    width: 60px;
+}
+
+@media (max-width: 700px){
+    #partner img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
 #partner {
     color: #fff;
     text-align: center;
