@@ -78,6 +78,17 @@ hr {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+.logo
+   {
+       color:black;
+       font-size: 40px;
+       padding:10px;
+   }
+   .logo:hover
+   {
+font-size:45px;
+color:white;
+   }
 
 .btn-transparent {
     border: 3px solid #fff;

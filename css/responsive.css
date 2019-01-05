@@ -71,17 +71,6 @@
     margin-right: -10px;
   }
 
-  #partner img {
-      height: 60px;
-      width: 60px;
-  }
-
-  @media (max-width: 700px){
-      #partner img {
-          height: 20px;
-          width: 20px;
-      }
-  }
 
   .recent-work-wrap .overlay .preview{
     line-height: inherit;
