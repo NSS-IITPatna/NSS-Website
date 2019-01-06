@@ -1,4 +1,4 @@
-/* --------------------------------
+/* -------------------------------- 
 
 Primary style
 
@@ -55,9 +55,9 @@ a {
 
 
 
-/* --------------------------------
+/* -------------------------------- 
 
-Main components
+Main components 
 
 -------------------------------- */
 
@@ -179,7 +179,6 @@ Main components
     position: relative;
   }
 }
-
 
 .cd-faq-items {
   position: fixed;
@@ -391,8 +390,6 @@ Main components
     transform: rotate(45deg);
     right: 32px;
   }
-
-
   .cd-faq-trigger::after {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
