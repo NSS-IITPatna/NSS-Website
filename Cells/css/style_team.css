@@ -41,6 +41,8 @@ p {
   margin-bottom: 15px;
 }
 
+
+
 h1, h2, h3, h4, h5, h6, figure {
   color: #000;
   font-family: "Varela Round", Arial, sans-serif;
@@ -63,17 +65,28 @@ h1, h2, h3, h4, h5, h6, figure {
   background: #52d3aa;
 }
 
+
+#fh5co-logo a {
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 58px;
+}
+@media (max-width:700px){
+#fh5co-logo a {
+  text-align: center;
+font-size:35px;
+color: #fff;
+padding: 2px 40px;
+}
+}
+
 #fh5co-logo {
   text-transform: uppercase;
   color: #fff;
   margin-bottom: 10px;
   line-height: 1.5;
 }
-#fh5co-logo a {
-  color: #fff;
-  padding: 10px 40px;
-  font-size: 58px;
-}
+
 #fh5co-logo a:hover, #fh5co-logo a:active, #fh5co-logo a:focus {
   text-decoration: none;
 }
@@ -778,10 +791,6 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 25px;
   padding-left: 18px;
 }
-.img-1{
-    border-radius: 50%;
-
-}
 .you{
   color:#45FFF9;
   font-style: italic;
@@ -790,5 +799,5 @@ h1, h2, h3, h4, h5, h6, figure {
    font-size:22px;
    color:#f1f1f1;
  }
- 
+
 /*# sourceMappingURL=style.css.map */
