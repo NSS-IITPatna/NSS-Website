@@ -78,6 +78,17 @@ hr {
     -webkit-box-shadow: none;
     box-shadow: none;
 }
+.logo
+   {
+       color:black;
+       font-size: 40px;
+       padding:10px;
+   }
+   .logo:hover
+   {
+font-size:45px;
+color:white;
+   }
 
 .btn-transparent {
     border: 3px solid #fff;
@@ -665,7 +676,8 @@ input.search-form:hover {
 }
 
 .services-wrap:hover {
-    background-color: #FAFAFA;
+    background-color: #9AF9F5;
+
 }
 
 .services-wrap h3 {
@@ -1015,6 +1027,18 @@ a.accordion-toggle i {
     background-color: tomato;
     background-size: cover;
     background-position: center center;
+}
+
+#partner img {
+    height: 60px;
+    width: 60px;
+}
+
+@media (max-width: 700px){
+    #partner img {
+        height: 40px;
+        width: 40px;
+    }
 }
 
 #partner {
@@ -2349,4 +2373,14 @@ shortcodes page css
 #footer ul>li {
     display: inline-block;
     margin-left: 15px;
+}
+.pull-left1{
+  padding-left: 70px;
+  padding-bottom: 12px;
+
+
+}
+.img-responsive{
+  border-color: #044DD2;
+    border-radius: 50%;
 }
